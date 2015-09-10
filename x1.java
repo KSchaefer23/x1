@@ -54,7 +54,11 @@ void draw() {
                                             
   //// ACTION:  move (x,y) coordinates.
   x=  x + dx;
+  if (x > width) dx= -dx;
+  if (x < 0) dx = -dx;
   y=  y + dy;
+  if (y>height) dy= -dy;
+  if (y<horizon-20) dy= -dy;
   
   //// SHOW:  display the creature at (x,y)
 
