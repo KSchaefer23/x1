@@ -25,10 +25,10 @@ void draw() {
   background( 100,150,200 );                // sky
   fill( 255,255,0 );
   
-  //sunX= (sunX + 1) % (width+100);
-  //sunY= (sunY + 1) % height;
-  ellipse( width*3/4, height/8, 60,60 );    // sun
-  //ellipse(sunX,sunY, 60,60 );    // sun
+  sunX= (sunX + .75) % (width+100);
+  sunY= (sunY + .1) % horizon;
+  //ellipse( width*3/4, height/8, 60,60 );    // sun
+  ellipse(sunX,sunY, 60,60 );    // sun
   // Grass
   fill( 100,200,100 );
   rect( 0,horizon, width,height*3/4 );      // grass.
