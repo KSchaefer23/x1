@@ -22,7 +22,7 @@ void setup() {
 //// NEXT FRAME:  scene, action, show.
 void draw() {
   //// SCENE:  sky, sun, tree, house, etc.
-  background( 100,150,200 );                // sky
+  background( 0,200,255 );                // sky
   fill( 255,255,0 );
   
   sunX= (sunX + .75) % (width+100);
