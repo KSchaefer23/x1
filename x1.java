@@ -26,7 +26,7 @@ void draw() {
   fill( 255,255,0 );
   
   sunX= (sunX + .75) % (width+100);
-  sunY= (sunY + .1) % horizon;
+  sunY= (sunY + .1) % (horizon + 60);
   //ellipse( width*3/4, height/8, 60,60 );    // sun
   ellipse(sunX,sunY, 60,60 );    // sun
   // Grass
