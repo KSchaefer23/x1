@@ -26,7 +26,7 @@ void draw() {
   fill( 255,255,0 );
   
   sunX= (sunX + .75) % (width+100);
-  sunY= (sunY + .1) % (horizon + 60);
+  sunY= (sunY + .1) % (horizon + 40);
   //ellipse( width*3/4, height/8, 60,60 );    // sun
   ellipse(sunX,sunY, 60,60 );    // sun
   // Grass
@@ -34,6 +34,7 @@ void draw() {
   rect( 0,horizon, width,height*3/4 );      // grass.
   
   /* INSERT YOUR CODE HERE! */
+  fill(6,118,7);
   triangle( 110,horizon-10, 150,horizon-45, 190,horizon-10  );  // bottom
   triangle( 120,horizon-30, 150,horizon-60, 180,horizon-30  );  // mid
   triangle( 130,horizon-50, 150,horizon-70, 170,horizon-50  );  // top
@@ -46,6 +47,9 @@ void draw() {
   rect(65,horizon-50, 15,15);                                          // window
   fill(255,0,0);
   rect(50,horizon-30, 20,30);                                          // door
+  fill(255,255,0);
+  ellipse(65, horizon-15, 5,5 );
+  fill(118,62,6);
   triangle( 30,horizon-60, 60,horizon-90, 90,horizon-60);              // roof
 
 
@@ -67,9 +71,12 @@ void draw() {
   rect(x-20,y, 70,10);                   // body
   rect( x,y, 30,50 );        
   ellipse(x+15, y-10, 20, 20);
-  fill(255);
-  ellipse(x+10, y-12, 5, 5);             // eyes
-  ellipse(x+20, y-12, 5, 5);
+  fill(255,255,255);
+  ellipse(x+10, y-12, 6, 6);             // eyes
+  ellipse(x+20, y-12, 6, 6);
+  fill(0,0,0);
+  ellipse(x+10, y-12, 2, 2);
+  ellipse(x+20, y-12, 2, 2);
   fill(255,0,0);
   arc(x+15,y-7, 10,10, 0, PI, CHORD);    // smile
   text( "Blue", x+3,y+20 );
