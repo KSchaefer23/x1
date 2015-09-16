@@ -70,6 +70,7 @@ void draw() {
   fill(255);
   ellipse(x+10, y-12, 5, 5);             // eyes
   ellipse(x+20, y-12, 5, 5);
+  fill(255,0,0);
   arc(x+15,y-7, 10,10, 0, PI, CHORD);    // smile
   text( "Blue", x+3,y+20 );
 
